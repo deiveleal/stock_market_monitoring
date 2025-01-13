@@ -163,6 +163,21 @@ Este projeto desenvolve um pipeline de dados em tempo real para monitorar o merc
 
 ---
 
-## 🤝 Contribuições
+## Estrutura
 
-Contribuições são bem-vindas! 🎉 Se você encontrar algum problema, quiser sugerir melhorias ou adicionar funcionalidades, abra uma [issue](#) ou envie um [pull request](#).
+src/
+├── data/  # Dados brutos e processados
+├── notebooks/  # Notebooks Jupyter para análise exploratória e prototipagem
+├── src/  # Código fonte dos scripts Python
+│   ├── modules/  # Módulos reutilizáveis
+│   ├── pipelines/  # Scripts para execução de pipelines
+│   ├── utils/  # Funções utilitárias
+│   └── __init__.py
+├── sql/  # Scripts SQL
+├── tests/  # Testes unitários e de integração
+├── airflow/  # Definições de DAGs no Airflow
+├── docs/  # Documentação
+└── requirements.txt  # Dependências
+infra/
+├── docker/  # Arquivos Dockerfile e docker-compose.yml
+└── kubernetes/  # Manifestos Kubernetes
